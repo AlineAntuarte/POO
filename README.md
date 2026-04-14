@@ -1,0 +1,35 @@
+# POO786202 — Estrutura de Exercícios
+
+Leia `guia_poo.md` (pode estar na pasta onde você rodou setup.sh) para a teoria completa de cada aula.
+
+## Como compilar e rodar
+
+```bash
+cd aula02
+javac Ex01Produto.java
+java Ex01Produto
+```
+
+## Estrutura
+
+| Pasta   | Conteúdo |
+|---------|----------|
+| aula01/ | Revisão Java (condicionais, loops, arrays) |
+| aula02/ | Classes e Objetos básicos |
+| aula03/ | Construtores e `this` |
+| aula04/ | Encapsulamento (`private`, getters/setters) |
+| aula05/ | Herança (`extends`, `super`, `@Override`) |
+| aula06/ | Polimorfismo e sobrecarga |
+| aula07/ | Classes abstratas, interfaces, `enum` |
+| aula08/ | Tratamento de exceções |
+| aula09/ | UML — Diagrama de classes |
+| aula10/ | Java Swing (GUI) |
+
+## Fluxo recomendado
+
+1. Leia a seção do guia_poo.md referente à aula
+2. Abra o arquivo .java da pasta correspondente
+3. Leia os comentários — eles descrevem o que você deve implementar
+4. Complete os `TODO`s
+5. Compile e teste
+6. Se travar, volte ao guia para revisar o conceito
