@@ -12,8 +12,8 @@ java Ex01Produto
 
 ## Estrutura
 
-| Pasta   | Conteúdo |
-|---------|----------|
+| Pasta | Conteúdo |
+| ------ | -------- |
 | aula01/ | Revisão Java (condicionais, loops, arrays) |
 | aula02/ | Classes e Objetos básicos |
 | aula03/ | Construtores e `this` |
