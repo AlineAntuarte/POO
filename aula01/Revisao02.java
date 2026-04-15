@@ -9,14 +9,41 @@
  */
 public class Revisao02 {
     public static void main(String[] args) {
-        int[] numeros = {42, 7, 19, 88, 3};
+        int[] numeros = { 42, 7, 19, 88, 3 };
+
+        int soma = 0;
+        int media = 0;
+        int maior = 0;
+        int menor = 0;
+
+        for (int i = 0; i < numeros.length; i++) {
+            soma = soma + numeros[i];
+            if (i == (numeros.length - 1)) {
+                System.out.println("A soma é: " + soma);
+            }
+        }
+
+        for (int i = 0; i < numeros.length; i++) {
+            soma = soma + numeros[i];
+            if (i == (numeros.length - 1)) {
+                media = (soma / (numeros.length - 1));
+                System.out.println("A média é: " + media);
+            }
+        }
+
+        for (int i = 0; i < numeros.length; i++) {
+            soma = soma + numeros[i];
+            if (i == (numeros.length - 1)) {
+                media = (soma / (numeros.length - 1));
+                System.out.println("A média é: " + media);
+            }
+        }
 
         // TODO: calcule soma
         // TODO: calcule média
         // TODO: encontre maior e menor
         // TODO: inverta o array no lugar (use troca com variável temporária)
 
-        System.out.println("Implemente os TODOs acima!");
         System.out.println("Implemente os TODOs acima!");
     }
 }
