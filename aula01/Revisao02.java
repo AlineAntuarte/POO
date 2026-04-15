@@ -51,6 +51,8 @@ public class Revisao02 {
         // }
         // int[] numeros = { 42, 7, 19, 88, 3 };
 
+        
+
         for (int i = 0; i < numeros.length; i++) {
             if (i == 0) {
                 temp = numeros[i]; // temp42
