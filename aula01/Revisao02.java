@@ -18,44 +18,44 @@ public class Revisao02 {
         int temp = 0;
         int l = 1;
 
-        // Soma
-        for (int i = 0; i < numeros.length; i++) {
-            soma = soma + numeros[i];
-            if (i == (numeros.length - 1)) {
-                System.out.println("A soma é: " + soma);
-            }
-        }
-        // Média
-        for (int i = 0; i < numeros.length; i++) {
-            soma = soma + numeros[i];
-            if (i == (numeros.length - 1)) {
-                media = (soma / (numeros.length - 1));
-                System.out.println("A média é: " + media);
-            }
-        }
+        // // Soma
+        // for (int i = 0; i < numeros.length; i++) {
+        // soma = soma + numeros[i];
+        // if (i == (numeros.length - 1)) {
+        // System.out.println("A soma é: " + soma);
+        // }
+        // }
+        // // Média
+        // for (int i = 0; i < numeros.length; i++) {
+        // soma = soma + numeros[i];
+        // if (i == (numeros.length - 1)) {
+        // media = (soma / (numeros.length - 1));
+        // System.out.println("A média é: " + media);
+        // }
+        // }
 
-        // Maior e Menor
-        for (int i = 0; i < numeros.length; i++) {
-            if (numeros[i] > maior) {
-                maior = numeros[i];
-            }
+        // // Maior e Menor
+        // for (int i = 0; i < numeros.length; i++) {
+        // if (numeros[i] > maior) {
+        // maior = numeros[i];
+        // }
 
-            if (numeros[i] <= numeros[i]) {
-                menor = numeros[i];
-            }
+        // if (numeros[i] <= numeros[i]) {
+        // menor = numeros[i];
+        // }
 
-            if (i == (numeros.length - 1)) {
-                System.out.println("O maior número é: " + maior);
-                System.out.println("O menor número é: " + menor);
-            }
-        }
+        // if (i == (numeros.length - 1)) {
+        // System.out.println("O maior número é: " + maior);
+        // System.out.println("O menor número é: " + menor);
+        // }
+        // }
         // int[] numeros = { 42, 7, 19, 88, 3 };
+        temp = numeros[i]; // temp42
 
         for (int i = 0; i < numeros.length; i++) {
-            temp = numeros[i]; // temp42
             numeros[i] = numeros[i + l];
-            l++;
-            if (i == 4) {
+            System.out.println("-> " + numeros[i] + " <-");
+            if (i == 3) {
                 numeros[i + l] = temp;
                 for (int j = 0; j < numeros.length; j++) {
                     System.out.println("-> " + numeros[j] + " <-");
