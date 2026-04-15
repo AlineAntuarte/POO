@@ -50,16 +50,17 @@ public class Revisao02 {
         // }
         // }
         // int[] numeros = { 42, 7, 19, 88, 3 };
-        temp = numeros[i]; // temp42
 
         for (int i = 0; i < numeros.length; i++) {
+            if (i == 0) {
+                temp = numeros[i]; // temp42
+            }
             numeros[i] = numeros[i + l];
             System.out.println("-> " + numeros[i] + " <-");
-            if (i == 3) {
-                numeros[i + l] = temp;
-                for (int j = 0; j < numeros.length; j++) {
-                    System.out.println("-> " + numeros[j] + " <-");
-                }
+            if (i == 4) {
+                numeros[i] = temp;
+                System.out.println("-> " + numeros[i] + " <-");
+
             }
         }
 
