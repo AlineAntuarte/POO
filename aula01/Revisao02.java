@@ -16,13 +16,14 @@ public class Revisao02 {
         int maior = 0;
         int menor = 0;
 
+        // Soma
         for (int i = 0; i < numeros.length; i++) {
             soma = soma + numeros[i];
             if (i == (numeros.length - 1)) {
                 System.out.println("A soma é: " + soma);
             }
         }
-
+        // Média
         for (int i = 0; i < numeros.length; i++) {
             soma = soma + numeros[i];
             if (i == (numeros.length - 1)) {
@@ -31,8 +32,8 @@ public class Revisao02 {
             }
         }
 
+        // Maior e Menor
         for (int i = 0; i < numeros.length; i++) {
-            // Maior
             if (numeros[i] > maior) {
                 maior = numeros[i];
             }
@@ -51,7 +52,5 @@ public class Revisao02 {
         // TODO: calcule média
         // TODO: encontre maior e menor
         // TODO: inverta o array no lugar (use troca com variável temporária)
-
-        System.out.println("Implemente os TODOs acima!");
     }
 }
