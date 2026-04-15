@@ -32,10 +32,18 @@ public class Revisao02 {
         }
 
         for (int i = 0; i < numeros.length; i++) {
-            soma = soma + numeros[i];
+            // Maior
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+            }
+
+            if (numeros[i] <= numeros[i]) {
+                menor = numeros[i];
+            }
+
             if (i == (numeros.length - 1)) {
-                media = (soma / (numeros.length - 1));
-                System.out.println("A média é: " + media);
+                System.out.println("O maior número é: " + maior);
+                System.out.println("O menor número é: " + menor);
             }
         }
 
