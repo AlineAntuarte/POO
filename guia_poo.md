@@ -1,7 +1,8 @@
 # Guia de Estudos — Programação Orientada a Objetos em Java
-**POO786202 — IFSC São José — 2026/1**
 
-> Você já sabe Java básico (variáveis, if/else, for/while, métodos estáticos). Este guia parte daí e leva até o conteúdo completo da disciplina. Cada "aula" tem teoria, exemplos comentados e exercícios. Os arquivos .java de cada exercício ficam nas pastas criadas pelo `setup.sh`.
+## POO786202 — IFSC São José — 2026/1
+
+> Você já sabe Java básico (variáveis, if/else, for/while, métodos estáticos). Este guia parte daí e leva até o conteúdo completo da disciplina. Cada "aula" tem teoria, exemplos comentados e exercícios. Os arquivos .java de cada exercício ficam nas pastas 'aulaxx'.
 
 ---
 
@@ -59,6 +60,7 @@ java NomeDaClasse          # executa
 ```
 
 Se o arquivo tem `package main;` no topo:
+
 ```bash
 javac -d . NomeDaClasse.java
 java main.NomeDaClasse
@@ -81,7 +83,7 @@ Uma **classe** é um molde. Ela descreve como objetos daquele tipo devem ser —
 
 **Classe ≠ Objeto.** A classe é o projeto; o objeto é a peça fabricada a partir desse projeto.
 
-```
+```text
 Classe: Gato              Objetos criados a partir dela:
   - raça: String            gato1: raça=Siamês, nome=Bichano, peso=4kg
   - nome: String            gato2: raça=Maine Coon, nome=Listrado, peso=6kg
@@ -134,7 +136,7 @@ p1.mostrarInfo();
 
 ### O que acontece na memória?
 
-```
+```text
 Stack (variáveis locais):         Heap (objetos):
 ┌─────────────────┐               ┌──────────────────────────┐
 │ p1 → 0x1A3F00   │──────────────▶│ nome: "Mouse"            │
@@ -224,6 +226,7 @@ public class Produto {
 ```
 
 Agora o uso muda:
+
 ```java
 // Antes (sem construtor):
 Produto p = new Produto();
@@ -313,11 +316,11 @@ O **encapsulamento** esconde o estado interno do objeto e só permite acesso con
 ### Modificadores de acesso
 
 | Modificador | Visível para |
-|-------------|-------------|
-| `public`    | Todo mundo |
-| `private`   | Apenas a própria classe |
-| `protected` | A classe e suas subclasses |
-| *(padrão)*  | Classes do mesmo pacote |
+|-------------|------------- |
+| `public`    | Todo mundo   |
+| `private`   | Apenas a própria classe    |
+| `protected` | A classe e suas subclasses   |
+| *(padrão)*  | Classes do mesmo pacote   |
 
 A regra prática: **atributos sempre `private`, métodos geralmente `public`**.
 
@@ -410,7 +413,7 @@ Arquivos em `aula04/`:
 
 Herança permite criar uma classe nova **baseada em uma existente**, reaproveitando e especializando seus atributos e métodos. A classe nova (*subclasse* ou *filha*) herda tudo da classe base (*superclasse* ou *pai*) e pode adicionar ou sobrescrever comportamentos.
 
-```
+```text
         Funcionario
         - nome
         - salarioBase
@@ -543,7 +546,7 @@ Sem polimorfismo, você precisaria de um `if (f instanceof Gerente)` para cada t
 ### Sobrecarga vs Sobrescrita
 
 | | Sobrecarga (*overloading*) | Sobrescrita (*overriding*) |
-|--|--|--|
+| -- | -- | -- |
 | O que é | Mesmo nome, parâmetros diferentes | Filho redefine método do pai |
 | Quando resolve | Em tempo de compilação | Em tempo de execução |
 | Anotação | — | `@Override` |
@@ -645,7 +648,7 @@ public class Conta implements Autenticavel, Imprimivel {
 ### Quando usar cada um?
 
 | | Classe Abstrata | Interface |
-|--|--|--|
+| -- | -- | -- |
 | Herança múltipla | Não | Sim |
 | Pode ter atributos | Sim | Só constantes (`static final`) |
 | Pode ter código | Sim (métodos concretos) | Sim (desde Java 8, `default`) |
@@ -695,7 +698,7 @@ Arquivos em `aula07/`:
 
 Uma **exceção** é um evento anormal que interrompe o fluxo normal do programa. Em Java, exceções são objetos — instâncias de classes que herdam de `Throwable`.
 
-```
+```text
 Throwable
 ├── Error (erros graves do sistema — não trate)
 └── Exception
@@ -786,7 +789,7 @@ UML (*Unified Modeling Language*) é uma linguagem visual para modelar sistemas.
 
 ### Notação básica de uma classe
 
-```
+```text
 ┌─────────────────────────┐
 │         Conta           │  ← Nome da classe
 ├─────────────────────────┤
@@ -803,26 +806,30 @@ UML (*Unified Modeling Language*) é uma linguagem visual para modelar sistemas.
 ### Relacionamentos
 
 **Herança (generalização):**
-```
+
+```text
 Funcionario ◁────── Gerente
             (seta com triângulo vazio = "é um")
 ```
 
 **Implementação de interface:**
-```
+
+```text
 <<interface>>
 Autenticavel ◁- - - Conta
              (seta tracejada = "implementa")
 ```
 
 **Associação (tem um):**
-```
+
+```text
 Cliente ──────── Conta
    1         0..*
 (um cliente tem zero ou mais contas)
 ```
 
 **Multiplicidade:**
+
 - `1` = exatamente um
 - `0..*` = zero ou muitos
 - `1..*` = um ou muitos
@@ -831,7 +838,8 @@ Cliente ──────── Conta
 ### Como ler um diagrama e traduzir para Java
 
 Dado o diagrama:
-```
+
+```text
         Banco
         - nome: String
         - contas: List<Conta>
@@ -847,6 +855,7 @@ Dado o diagrama:
 ```
 
 Tradução:
+
 ```java
 public class Banco {
     private String nome;
@@ -883,7 +892,7 @@ Arquivos em `aula09/`:
 ### Componentes principais
 
 | Componente | O que é |
-|------------|---------|
+| ------------ | --------- |
 | `JFrame` | A janela principal |
 | `JPanel` | Painel para agrupar componentes |
 | `JLabel` | Rótulo de texto |
@@ -1000,4 +1009,4 @@ Arquivos em `aula10/`:
 
 ---
 
-*Guia gerado com base nos slides da disciplina, código fornecido e ementa do SIGAA — POO786202 IFSC São José 2026/1*
+> *Guia gerado com base nos slides da disciplina, código fornecido e ementa do SIGAA — POO786202 IFSC São José 2026/1*
