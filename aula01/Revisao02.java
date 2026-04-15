@@ -15,6 +15,8 @@ public class Revisao02 {
         int media = 0;
         int maior = 0;
         int menor = 0;
+        int temp = 0;
+        int l = 1;
 
         // Soma
         for (int i = 0; i < numeros.length; i++) {
@@ -45,6 +47,19 @@ public class Revisao02 {
             if (i == (numeros.length - 1)) {
                 System.out.println("O maior número é: " + maior);
                 System.out.println("O menor número é: " + menor);
+            }
+        }
+        // int[] numeros = { 42, 7, 19, 88, 3 };
+
+        for (int i = 0; i < numeros.length; i++) {
+            temp = numeros[i]; // temp42
+            numeros[i] = numeros[i + l];
+            l++;
+            if (i == 4) {
+                numeros[i + l] = temp;
+                for (int j = 0; j < numeros.length; j++) {
+                    System.out.println("-> " + numeros[j] + " <-");
+                }
             }
         }
 
