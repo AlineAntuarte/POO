@@ -315,12 +315,12 @@ O **encapsulamento** esconde o estado interno do objeto e só permite acesso con
 
 ### Modificadores de acesso
 
-| Modificador | Visível para |
-|-------------|------------- |
-| `public`    | Todo mundo   |
-| `private`   | Apenas a própria classe    |
-| `protected` | A classe e suas subclasses   |
-| *(padrão)*  | Classes do mesmo pacote   |
+| Modificador | Visível para                         |
+|-------------|--------------------------------------|
+| `public`    | Todo mundo                           |
+| `private`   | Apenas a própria classe              |
+| `protected` | A classe e suas subclasses           |
+| *(padrão)*  | Classes do mesmo pacote              |
 
 A regra prática: **atributos sempre `private`, métodos geralmente `public`**.
 
