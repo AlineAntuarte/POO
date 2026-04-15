@@ -17,5 +17,6 @@ public class Revisao02 {
         // TODO: inverta o array no lugar (use troca com variável temporária)
 
         System.out.println("Implemente os TODOs acima!");
+        System.out.println("Implemente os TODOs acima!");
     }
 }
