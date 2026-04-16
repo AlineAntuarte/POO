@@ -14,12 +14,12 @@ import java.util.List;
  */
 
 /**
- * Tabela de Preços - Skins Vandal (Valorant)
- * * | Coleção | Categoria | Arma Avulsa | Custo Médio (R$) |
- * |--------------------|-----------|-------------|------------------|------------------|
- * | ORA (OneTap) | Ultra | 2.475 VP | ~ R$ 300,00 |
- * | Proteção Fásica | Ultra | 2.475 VP | ~ R$ 300,00 |
- * | Prelúdio do Caos | Exclusiva | 2.175 VP | ~ R$ 260,00 |
+ * Skins Vandal - Valores Individuais
+ * | Nome              | Categoria | Valor (VP) | Valor (R$) |
+ * |-------------------|-----------|------------|------------|
+ * | ORA (OneTap)      | Ultra     | 2.475      | ~ R$ 92,00 |
+ * | Proteção Fásica   | Ultra     | 2.475      | ~ R$ 92,00 |
+ * | Prelúdio do Caos  | Exclusiva | 2.175      | ~ R$ 75,00 |
  */
 
 class Produto {
