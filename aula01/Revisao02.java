@@ -10,13 +10,13 @@
 public class Revisao02 {
     public static void main(String[] args) {
         int[] numeros = { 42, 7, 19, 88, 3 };
+        int[] teste = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21 };
 
         int soma = 0;
         int media = 0;
         int maior = 0;
         int menor = 0;
         int temp = 0;
-        int l = 1;
 
         // Soma
         for (int i = 0; i < numeros.length; i++) {
@@ -49,18 +49,20 @@ public class Revisao02 {
                 System.out.println("O menor número é: " + menor);
             }
         }
-        // int[] numeros = { 42, 7, 19, 88, 3 };
+        
+        int inicio = 0;
+        int fim = (teste.length - 1);
+        System.out.println("====== INICIANDO ======");
+        while (inicio < fim) {
+            temp = teste[inicio];
+            teste[inicio] = teste[fim];
+            teste[fim] = temp;
+            inicio++;
+            fim--;
+        }
 
-        for (int i = 0; i < numeros.length; i++) {
-            if (i == 0) {
-                temp = numeros[i]; // temp42
-            }
-            numeros[i] = numeros[i + l];
-            System.out.println("-> " + numeros[i] + " <-");
-            if (i == 4) {
-                numeros[i] = temp;
-                System.out.println("-> " + numeros[i] + " <-");
-            }
+        for (int i = 0; i < teste.length; i++) {
+            System.out.println("Array = " + teste[i]);
         }
 
         // TODO: calcule soma
