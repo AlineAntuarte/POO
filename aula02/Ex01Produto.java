@@ -6,14 +6,26 @@ import java.util.List;
  *
  * A classe Produto está definida abaixo SEM construtor (atributos públicos).
  * Sua tarefa no main:
- * 1. Crie 3 objetos Produto com dados diferentes.
+ * 1. Crie 3 OBJETOS Produto com dados diferentes.
  * 2. Imprima as informações de cada um usando mostrarInfo().
  * 3. Calcule e imprima o valor total da compra dos 3 produtos.
  *
  * Depois de fazer funcionar, adicione o método toString() à classe Produto.
  */
+
+/**
+ * Tabela de Preços - Skins Vandal (Valorant)
+ * * | Coleção | Categoria | Arma Avulsa | Custo Médio (R$) |
+ * |--------------------|-----------|-------------|------------------|------------------|
+ * | ORA (OneTap) | Ultra | 2.475 VP | ~ R$ 300,00 |
+ * | Proteção Fásica | Ultra | 2.475 VP | ~ R$ 300,00 |
+ * | Prelúdio do Caos | Exclusiva | 2.175 VP | ~ R$ 260,00 |
+ */
+
 class Produto {
     String nome;
+    String categoria;
+    int pontosValorant;
     double preco;
     int quantidade;
 
